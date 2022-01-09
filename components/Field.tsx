@@ -5,7 +5,14 @@ import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 
 const Field = () => {
     const letters = ["", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
-    const [grid, setGrid] = useState<TCell[][]>(Array.from({ length: 10 }, () => Array.from({ length: 10 }, () => { return { isSelected: false } })));
+    const [grid, setGrid] = useState<TCell[][]>(Array.from({ length: 10 }, () => Array.from({ length: 10 }, () => {
+        return {
+            isHit: false,
+            isMiss: false,
+            isShip: false,
+            isSunk: false,
+        }
+    })));
 
     return (
         <Grid
