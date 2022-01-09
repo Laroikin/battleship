@@ -1,2 +1,2 @@
 # battleship
-A small game made with @asobirov on next.js
+A small game made in collaboration with @asobirov on next.js
