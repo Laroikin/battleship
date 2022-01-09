@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react"
 import { Cell as TCell } from "@lib/types"
 
-const Cell = ({ isHit, isMiss, isShip, isSunk, ...rest }: TCell) => {
+const Cell = ({ isHit = false, isMiss = false, isShip = false, isSunk = false, ...rest }: TCell) => {
     return (
         <Box
             w={{ base: 6, md: 8 }}

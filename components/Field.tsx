@@ -55,7 +55,13 @@ const Field = () => {
                         </Flex>
 
                         {row.map((cell, j) => (
-                            <Cell key={`${i}-${j}`} />
+                            <Cell
+                                isHit={cell.isHit}
+                                isMiss={cell.isMiss}
+                                isShip={cell.isShip}
+                                isSunk={cell.isSunk}
+                                key={`${i}-${j}`}
+                            />
                         ))}
                     </>
                 ))
